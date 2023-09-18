@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+  background: url('https://images.unsplash.com/photo-1693229867274-e6f35ecefcc9?ixid=M3w0NzM0MTJ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTUwMjQ5NTF8&ixlib=rb-4.0.3');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+.selected{
+  transform: translateY(-15px);
+  transition: all 0.5s;
+}
+
+.selected .tab-bg{
+  border-radius: 100%;
+  transform: scale(110%);
+  opacity: 1;
+}
+
+.selected .tab-bar{
+ opacity: 1;
+  transition: all 0.2s;
+  transition-delay: 0.3s;
+}
