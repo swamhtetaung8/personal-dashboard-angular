@@ -10,6 +10,8 @@ import { TodosComponent } from './components/todos/todos.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { LucideAngularModule,Bookmark,Check,AlignLeft } from 'lucide-angular';
 import { BookmarkCardComponent } from './components/bookmark-card/bookmark-card.component';
+import { NoteCardComponent } from './components/note-card/note-card.component';
+import { TodoCardComponent } from './components/todo-card/todo-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BookmarkCardComponent } from './components/bookmark-card/bookmark-card.
     NotesComponent,
     TodosComponent,
     TabsComponent,
-    BookmarkCardComponent
+    BookmarkCardComponent,
+    NoteCardComponent,
+    TodoCardComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes),
